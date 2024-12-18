@@ -5,37 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fargo Marketing Group</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
 <body>
   <header class="header wrapper">
-      <img class="header__logo--img" src="assets/img/fargo-logo-black.png"/>
+      <img class="header__logo--img" src="../assets/img/fargo-logo-black.png"/>
       <div id="header__nav">
           <ul class="nav">
-              <li class="nav__nav-item">Главная</li>
-              <li class="nav__nav-item">О Нас</li>
-              <li class="nav__nav-item">Услуги</li>
-              <li class="nav__nav-item">Новости</li>
-              <li class="nav__nav-item">Партнеры</li>
-              <li class="nav__nav-item">Фотогалерея</li>
-              <li class="nav__nav-item">Контакты</li>
+              <li class="nav__nav-item">Main</li>
+              <li class="nav__nav-item">About</li>
+              <li class="nav__nav-item">Servises</li>
+              <li class="nav__nav-item">News</li>
+              <li class="nav__nav-item">Partners</li>
+              <li class="nav__nav-item">Gallery</li>
+              <li class="nav__nav-item">Contscts</li>
           </ul>
       </div>
       <div class="header__language">
         <img class="header__language--img" alt="">
-        <p class="header__language--text">RU</p>
+        <select id="header__language--switcher">
+          <option value="ru" selected>RU</option>
+          <option value="en">EN</option>
+        </select>
       </div>
   </header>
-  <div class="fargo">
-      <video class="video-fargo" autoplay loop muted>
-          <source src="assets/img/film.mp4" type="video/mp4">
+  <section class="hero__video wrapper">
+      <video class="hero__video--video" autoplay loop muted>
+          <source src="../assets/img/film.mp4" type="video/mp4">
       </video>
-  </div>
-  <div class="title-fargo">
+  </section>
+  <!-- <div class="title-fargo">
       <h1>Дистрибьюторская Компания</h1>
       <h4>Надежный партнер на рынке уже 29 лет</h4>
-  </div>
+  </div> -->
   <div class="partner">
       <h2 class="h-our">Fargo Marketing Group:<br>Ваш надежный партнер с конкурентными преимуществами</h2>
       <div class="partner-cont">
@@ -59,7 +62,7 @@
                   продажах товаров народного потребления и сегодня 
                   является одним из лидеров дистрибьюторского бизнеса в 
                   Узбекистане.<br><br>В настоящее время мы являемся официальными дистрибьюторами на территории Республики Узбекистан таких компаний, как: «Bonduelle» Франция, «PEPSICO LAYS» США, ООО «Кухмастер», ООО «Mareven Food Central» (Rollton), «BATEEL», «SOBRANIE», «ГЛАВПРОДУКТ», «МОЛВЕСТ», «VESTEL» продажа сахара от «ООО Ангрен Шакар», «ООО Xorazm Shakar», «СП Coca-Cola Узбекистан».</p>
-              <img class="img-partner" src="assets\img\1.png" alt="photo-part" >
+              <img class="img-partner" src="../assets\img\1.png" alt="photo-part" >
           </div>
       </div>
   </div>
@@ -67,27 +70,27 @@
       <h2>Наши Услуги</h2>
       <div class="ser-cont">
           <div class="box">
-              <img class="img-box" src="assets/img/5.png" alt="retail">
+              <img class="img-box" src="../assets/img/5.png" alt="retail">
               <h4 class="h-box">Доставка в розничные сети</h4>
               <p class="p-box">Наша команда агентов и супервайзеров оснащена современными планшетами, что позволяет эффективно и оперативно решать задачи прямо на месте в торговых точках.</p>
           </div>
           <div class="box">
-              <img class="img-box" src="assets/img/4.png" alt="docs">
+              <img class="img-box" src="../assets/img/4.png" alt="docs">
               <h4 class="h-box">Таможенное сопровождение</h4>
               <p class="p-box">Мы предоставляем полный комплекс услуг по таможенному оформлению и сопровождаем вас на каждом этапе, помогая эффективно решать задачи декларирования.</p>
           </div>
           <div class="box">
-              <img class="img-box" src="assets/img/11.png" alt="logistic">
+              <img class="img-box" src="../assets/img/11.png" alt="logistic">
               <h4 class="h-box">Логистические Услуги</h4>
               <p class="p-box">Оказываем полный спектр логистических услуг по всей территории Узбекистана, обслуживая как местные, так и международные компании.</p>
           </div>
           <div class="box">
-              <img class="img-box" src="assets/img/10.png" alt="logistic">
+              <img class="img-box" src="../assets/img/10.png" alt="logistic">
               <h4 class="h-box">Логистическая компания</h4>
               <p class="p-box">Логистическая компания INCOTRUCK LLC основанная в 2015-ом году является собственным подразделением холдинга «Fargo Marketing Group».</p>
           </div>
           <div class="box">
-              <img class="img-box" src="assets/img/3.png" alt="logistic">
+              <img class="img-box" src="../assets/img/3.png" alt="logistic">
               <h4 class="h-box">Таможенный терминал</h4>
               <p class="p-box">Собственный таможенный терминал в городе Коканд с площадью 4000м2 и железнодорожной веткой.</p>
           </div>
@@ -100,22 +103,22 @@
       <h2>Наши новости</h2>
       <div class="slider">
           <div class="slide">
-              <img class="img-slide" src="assets/img/6.png">
+              <img class="img-slide" src="../assets/img/6.png">
               <h5>12 янв 2024</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt veritatis tenetur ullam tempora molestiae! Veritatis minus ipsam earum ullam aspernatur id reprehenderit expedita corporis saepe soluta, temporibus, recusandae quam? Consequatur.</p>
           </div>
           <div class="slide">
-              <img class="img-slide" src="assets/img/7.png">
+              <img class="img-slide" src="../assets/img/7.png">
               <h5>12 янв 2024</h5>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, quis! Numquam distinctio ut voluptate quidem excepturi consectetur impedit nisi dolores quisquam, libero debitis, nam, et veritatis repudiandae cum animi autem!</p>
           </div>
           <div class="slide">
-              <img class="img-slide" src="assets/img/8.png">
+              <img class="img-slide" src="../assets/img/8.png">
               <h5>12 янв 2024</h5>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, beatae quidem. Quos earum eius architecto! Ipsam minus possimus, maxime, omnis quaerat quasi consequuntur ab itaque velit doloremque odit quas expedita!</p>
           </div>
           <div class="slide">
-              <img class="img-slide" src="assets/img/9.png">
+              <img class="img-slide" src="../assets/img/9.png">
               <h5>12 янв 2024</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis saepe, officia quaerat laborum quia deserunt distinctio qui ipsum? Rerum dolorum sunt saepe! Explicabo officiis cumque velit ratione ipsa nisi?</p>
           </div>
@@ -124,15 +127,15 @@
   <div class="brands">
       <h2>Наши Партнеры</h2>
       <div class="logos">
-          <img class="brand" src="assets/img/Bonduelle Logo.png" alt="">
-          <img class="brand" src="assets/img/Coca Cola Logo.png" alt="">
-          <img class="brand" src="assets/img/Lay's Logo.png" alt="">
-          <img class="brand" src="assets/img/maisondegout.jpg" alt="">
+          <img class="brand" src="../assets/img/Bonduelle Logo.png" alt="">
+          <img class="brand" src="../assets/img/Coca Cola Logo.png" alt="">
+          <img class="brand" src="../assets/img/Lay's Logo.png" alt="">
+          <img class="brand" src="../assets/img/maisondegout.jpg" alt="">
           <!-- <img class="brand" src="assets/img/angrenshakar.png" alt=""> -->
-          <img class="brand" src="assets/img/mareven.png" alt="">
-          <img class="brand" src="assets/img/bateel.jpg" alt="">
-          <img class="brand" src="assets/img/glavproduct.jpg" alt="">
-          <img class="brand" src="assets/img/kuhmaster.jpg" alt="">
+          <img class="brand" src="../assets/img/mareven.png" alt="">
+          <img class="brand" src="../assets/img/bateel.jpg" alt="">
+          <img class="brand" src="../assets/img/glavproduct.jpg" alt="">
+          <img class="brand" src="../assets/img/kuhmaster.jpg" alt="">
       </div>
   </div>
   <footer>
@@ -155,5 +158,6 @@
           <h4>+998 71 241-19-50</h4>
       </div>
   </footer>
+<script src="../index.js"></script>
 </body>
 </html>
