@@ -9,7 +9,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
 <body>
-  <header class="header wrapper">
+  <header class="header">
       <img class="header__logo--img" src="../assets/img/fargo-logo-black.png"/>
       <div id="header__nav">
           <ul class="nav">
@@ -30,7 +30,7 @@
         </select>
       </div>
   </header>
-  <section class="hero__video wrapper">
+  <section class="hero__video">
       <video class="hero__video--video" autoplay loop muted>
           <source src="../assets/img/film.mp4" type="video/mp4">
       </video>
@@ -39,33 +39,53 @@
       <h1>Дистрибьюторская Компания</h1>
       <h4>Надежный партнер на рынке уже 29 лет</h4>
   </div> -->
-  <div class="partner">
-      <h2 class="h-our">Fargo Marketing Group:<br>Ваш надежный партнер с конкурентными преимуществами</h2>
-      <div class="partner-cont">
-          <h2 class="h-about">О Нашей компании</h2>
-          <div class="about-text">
-              <p class="paragraph-part">"Мы — холдинг «Fargo Marketing Group», который самостоятельно осуществляет все процессы без привлечения сторонних услуг, что позволяет значительно снизить себестоимость продукции. Благодаря продуманной стратегии и условиям работы, холдинг «FMG Group» уверенно сохраняет конкурентоспособность среди ведущих дистрибьюторских компаний Узбекистана."<br><br>Компания "Food Distribution Gran Plus" была основана в 1995 году 
-                  с командой из шести человек. Первым шагом на пути к успеху 
-                  стало сотрудничество с корпорацией «Wm. Wrigley Jr. Company»,
-                  когда компания занималась базовой дистрибуцией. 
-                  Среди ключевых партнёров на ранних этапах были такие
-                  известные компании, как «Ferrero», «Bonduelle», «Gallina Blanca»
-                  и «Reckitt Benckiser».<br><br>С течением времени компания значительно расширила свою
-                  деятельность, устанавливая партнёрские отношения с 
-                  международными корпорациями. В 2012 году началось 
-                  сотрудничество с «Kimberly Clark», мировым лидером в 
-                  производстве товаров для гигиены. Это стало важным шагом 
-                  в развитии компании и привело к её ребрендингу: подразделение 
-                  «Food Distribution Gran Plus» было преобразовано в «Fargo 
-                  Marketing Group».<br><br>Несмотря на сложные рыночные условия, «Fargo
-                  Marketing Group» достигла высоких результатов в 
-                  продажах товаров народного потребления и сегодня 
-                  является одним из лидеров дистрибьюторского бизнеса в 
-                  Узбекистане.<br><br>В настоящее время мы являемся официальными дистрибьюторами на территории Республики Узбекистан таких компаний, как: «Bonduelle» Франция, «PEPSICO LAYS» США, ООО «Кухмастер», ООО «Mareven Food Central» (Rollton), «BATEEL», «SOBRANIE», «ГЛАВПРОДУКТ», «МОЛВЕСТ», «VESTEL» продажа сахара от «ООО Ангрен Шакар», «ООО Xorazm Shakar», «СП Coca-Cola Узбекистан».</p>
-              <img class="img-partner" src="../assets\img\1.png" alt="photo-part" >
+  <main class="main-container wrapper">
+    <section class="about__container">
+      <div class="about__title">
+        <h2 class="about__title--h2">Fargo Distribution</h2>
+        <h3 class="about__title--h3">Ваш надежный партнер с конкурентными преимуществами</h3>
+      </div>
+      <div class="about__container--inner">
+          <div class="about__content">
+            <h2 class="about__title--text">О компании</h2>
+            <p class="about__text">
+              "Мы — холдинг «Fargo Marketing Group», который самостоятельно осуществляет все процессы без привлечения сторонних услуг, что позволяет значительно снизить себестоимость продукции. Благодаря продуманной стратегии и условиям работы, холдинг «FMG Group» уверенно сохраняет конкурентоспособность среди ведущих дистрибьюторских компаний Узбекистана."
+            </p>
+            <button class="about btn" type="button">
+              <a class="btn--link" href="#">Подробнее</a>
+            </button>
+            <!-- <p class="about__text">
+              Компания "Food Distribution Gran Plus" была основана в 1995 году 
+                с командой из шести человек. Первым шагом на пути к успеху 
+                стало сотрудничество с корпорацией «Wm. Wrigley Jr. Company»,
+                когда компания занималась базовой дистрибуцией. 
+                Среди ключевых партнёров на ранних этапах были такие
+                известные компании, как «Ferrero», «Bonduelle», «Gallina Blanca»
+                и «Reckitt Benckiser».
+            </p> -->
+            <!-- <p class="about__text">
+              С течением времени компания значительно расширила свою
+              деятельность, устанавливая партнёрские отношения с 
+              международными корпорациями. В 2012 году началось 
+              сотрудничество с «Kimberly Clark», мировым лидером в 
+              производстве товаров для гигиены. Это стало важным шагом 
+              в развитии компании и привело к её ребрендингу: подразделение 
+              «Food Distribution Gran Plus» было преобразовано в «Fargo 
+              Marketing Group».
+            </p>
+            <p class="about__text">Несмотря на сложные рыночные условия, «Fargo
+              Marketing Group» достигла высоких результатов в 
+              продажах товаров народного потребления и сегодня 
+              является одним из лидеров дистрибьюторского бизнеса в 
+              Узбекистане.
+            </p>
+            <p class="about__text">В настоящее время мы являемся официальными дистрибьюторами на территории Республики Узбекистан таких компаний, как: «Bonduelle» Франция, «PEPSICO LAYS» США, ООО «Кухмастер», ООО «Mareven Food Central» (Rollton), «BATEEL», «SOBRANIE», «ГЛАВПРОДУКТ», «МОЛВЕСТ», «VESTEL» продажа сахара от «ООО Ангрен Шакар», «ООО Xorazm Shakar», «СП Coca-Cola Узбекистан».
+            </p> -->
+              
+            <img class="about__image" src="../assets\img\1.png" alt="photo-part" >
           </div>
       </div>
-  </div>
+  </section>
   <div class="services">
       <h2>Наши Услуги</h2>
       <div class="ser-cont">
@@ -138,6 +158,7 @@
           <img class="brand" src="../assets/img/kuhmaster.jpg" alt="">
       </div>
   </div>
+  </main>
   <footer>
       <div class="contacts">
           <h3 class="h-contacts">Контакты</h3>
