@@ -283,7 +283,9 @@ h1{
 .about__btn {
   padding: 20px 40px;
   border-radius: 20px;
-  background-color: greenyellow;
+  background: rgb(109,246,136);
+  background: linear-gradient(90deg, rgba(109,246,136,1) 18%, rgba(5,179,57,1) 81%);
+  /* background-color: greenyellow; */
   border: 0;
   box-shadow: -2px 18px 23px -5px rgba(44, 55, 64, 0.2);
 }
@@ -320,7 +322,7 @@ h1{
     "btn image"; /* Определяем области сетки */
   column-gap: 100px; /* Расстояние между колонками */
   row-gap: 20px; /* Расстояние между строками */
-  padding-left: 170px;
+  padding-left: 100px;
 }
 
 .about__title--text {
@@ -384,27 +386,62 @@ h1{
   margin-bottom: 100px;
 }
 
+.servises__slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider-btn {
+  width: 45px;
+  height: 50px;
+}
+
+.arrow-btn {
+  border: 0;
+  background: greenyellow;
+  border-radius: 50%;
+  margin-top: -120px;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+  cursor: pointer;
+  background-color: rgb(83, 219, 30);
+}
+
+.left-btn:disabled,
+.right-btn:disabled {
+  cursor: default;
+  background-color: #ccc;
+}
+
+.services__container--hidden {
+  width: 1300px;
+  height: 610px;
+  overflow-x: hidden;
+  transition: all 0.5 ease;
+}
 .services__box-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 34px;
   align-items: center;
-  max-width: 1200px;
+  width: max-content;
+  transition: transform 0.5s ease;
+  padding-left: 15px;
 }
 
 .box-container--box {
-  /* padding: 10px; */
-  /* border: 1px solid black;/ */
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 520px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background: white;
   border-radius: 30px;
-  margin: 0px 10px;
-  box-shadow: -2px 18px 23px -5px rgba(44, 55, 64, 0.31);
+  box-shadow: -2px 18px 14px -9px rgba(44, 55, 64, 0.1);
+  transition: all 0.5 ease;
 }
 
 .box-container--box:hover{
@@ -414,7 +451,7 @@ h1{
 
 .box-container--box__image {
   width: 100%;
-  height: 50%;
+  height: 55%;
   margin: 0;
   margin-bottom: 40px;
   border-radius: 30px 30px 0px 0px;
@@ -426,7 +463,9 @@ h1{
   text-align: left;
   padding: 5px;
   margin: 5px;
-  padding-bottom: 10px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: rgb(34, 33, 32);
 }
 
@@ -435,61 +474,52 @@ h1{
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 0.01em;
-  margin: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* button{
-  margin: 70px;
-  border: 0 solid rgb(2, 73, 61);
-  background: rgb(36, 99, 88);
-  border-radius: 20px;
-  padding: 20px 30px;
-  font-family: 'Gilroy';
-  font-weight: 400;
-  font-size: 20px;
-  color: aliceblue;
-  cursor: pointer;
-} */
+.servises__button{
+  margin: 0px;
+  margin-left: 573px;
+}
 
-/* button:hover {
-  background: #69ac9f;
-  color: #20302d;
-  font-weight: 600;
-} */
-
-.news {
+.slider__news {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
 }
 
-.slider {
-  /* width: 1000px; */
+.slider__news--container {
   display: flex;
+  flex-direction: column;
   transition: transform 0.6s ease;
   margin-bottom: 100px;
   
 }
 
 .slide {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 300px; /* Размер каждого слайда */
-  height: 500px;
-  background: rgb(214, 212, 212);
-  margin: 10px;
-  padding: 0px 20px;
-  
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  background: rgb(214, 212, 212);  
 }
 
 .img-slide {
-  width: 340px;
-  height: auto; /* Чтобы картинка занимала весь слайд */
-  margin-top: -100px;
-  margin-left: -20px;
+  grid-row: span 2 / span 2;
+}
+
+.new-description {
+  grid-column-start: 2;
+}
+.img-slide {
+  width: 576px;
+  height: 400px; /* Чтобы картинка занимала весь слайд */
+  /* margin-top: -100px;
+  margin-left: -20px; */
+
   /* margin-bottom: -100px; */
 }
 
@@ -497,14 +527,6 @@ h5 {
   font-size: 15px;
   margin-top: 0px;
 }
-/* .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-  top: 3700px;
-  gap: 800px;
-} */
 
 .arrow-img {
   width: 50px;
